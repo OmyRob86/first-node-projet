@@ -8,7 +8,17 @@ app.listen(3000, () => {
 
 app.get('/', (req, res) => {
     console.log('access to / path');
-    res.send('hola amigos !');
+    res.send(`
+    <!Doctype html>
+    <html>
+        <head>
+            <title>Projet_2</title>
+        </head>
+        <body>
+            <h1>'hola amigos !</h1>
+            </body>
+        </html>
+        `);
 });
 
 app.get("/about", (req, res) => {
